@@ -1,3 +1,7 @@
+import 'dart:typed_data';
+
+import 'package:trezor_mirage/interpreter/interpreter.dart';
+
 String removeBefore3F(String hexString) {
   int startIndex = hexString.indexOf('3f');
   if (startIndex == -1) {
@@ -105,5 +109,5 @@ void main() {
   ];
 
   List<int> mergedDecBytes = processInputs(inputs);
-  print('Merged output dec: $mergedDecBytes');
+  Interpreter.interpret(Uint8List.fromList(mergedDecBytes));
 }

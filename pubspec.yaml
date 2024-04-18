@@ -2,13 +2,18 @@ name: trezor_mirage
 description: A Dart app that communicates via Trezor Protocol.
 
 version: 1.0.0
-# repository: https://github.com/nemoforte/trezor-mirage
+# repository: https://github.com/nemoforte/trezor-support
 
 environment:
-  sdk: ^3.1.3
+  sdk: ^3.2.2
 
 dependencies:
+  dart_web3gas: ^0.0.8
   protobuf: ^3.1.0
+  cryptography_utils:
+    git:
+      url: git@github.com:snggle/cryptography_utils.git
+      ref: dp-feature/migrate-to-dart
 
 dev_dependencies:
   lints: ^2.0.0
