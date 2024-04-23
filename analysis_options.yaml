@@ -24,6 +24,7 @@ analyzer:
     - lib/**.g.dart
     - lib/**.gr.dart
     - lib/test/mocks/**
+    - lib/protob/compiled/**
     # - test/integration/**
 
   language:
